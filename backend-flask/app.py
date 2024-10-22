@@ -31,7 +31,6 @@ trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
 app = Flask(__name__)
-
 #honeycomb
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
