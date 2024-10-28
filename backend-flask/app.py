@@ -31,6 +31,13 @@ import watchtower
 import logging
 from time import strftime
 
+
+#rollbar
+import os
+import rollbar
+import rollbar.contrib.flask
+from flask import got_request_exception
+
 # Configuring Logger to Use AWS CloudWatch
 # LOGGER = logging.getLogger(__name__)
 # LOGGER.setLevel(logging.DEBUG)
