@@ -6,7 +6,7 @@ from lib.db import pool, query_wrap_array
 class HomeActivities:
   def run(cognito_user_id=None): #added (Logger) to view logs in cloudwatch
     #Logger.info("HomeActivities")
-    now = datetime.now(timezone.utc).astimezone()
+    #now = datetime.now(timezone.utc).astimezone()
 
     sql = query_wrap_array("""
       SELECT
